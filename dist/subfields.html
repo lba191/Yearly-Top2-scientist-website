@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore annual Top 2% scientist representation and scientist rankings within every subfield.">
+  <title>Subfield Explorer · Top 2% Scientist Trends</title>
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/styles.css?v=12">
+  <script defer src="assets/app.js?v=12"></script>
+</head>
+<body data-page="subfields">
+  <header class="site-header"><div class="shell header-row"><a class="brand" href="index.html"><span class="mark">2%</span><span>Scientist Trends</span></a><div class="author-credit" aria-label="Site author"><strong>Bian Liu</strong><span class="author-role">PhD student · Department of Building Environment and Energy Engineering</span><span class="author-university">The Hong Kong Polytechnic University (PolyU)</span><a class="author-email" href="mailto:bi-an.liu@connect.polyu.hk">bi-an.liu@connect.polyu.hk</a></div><nav class="nav"><a href="index.html">Overview</a><a href="scientists.html">Scientists</a><a href="institutions.html">Institutions</a><a href="countries.html">Countries</a><a class="active" href="subfields.html">Subfields</a><a href="downloads.html">Downloads</a><a href="methodology.html">Methodology</a></nav><span class="pilot-badge">Complete data</span><span class="mobile-note">2019–2026</span></div></header>
+  <main class="shell">
+    <div class="page-head"><div class="eyebrow">Subfield explorer</div><h1>Compare scientists within a subfield.</h1><p>Search every source subfield, follow its representation from 2019 to 2026, and inspect the scientists ranked within it for any release.</p></div>
+    <div class="control-bar">
+      <input class="search" id="subfield-search" aria-label="Search subfields" placeholder="Search a subfield…">
+      <select class="select explorer-select" id="subfield-select" aria-label="Choose subfield"></select>
+      <label for="subfield-year">Release</label><select class="select" id="subfield-year" data-year></select>
+      <div class="toggle" aria-label="Self-citation setting"><button class="active" data-subfield-self="on">Including self-citations</button><button data-subfield-self="off">Excluding</button></div>
+    </div>
+    <section class="card ranking-directory" id="subfield-ranking"><div class="loading">Loading the complete subfield ranking…</div></section>
+    <section class="card explorer-profile" id="subfield-profile"><div class="loading">Loading complete subfield trends and rankings…</div></section>
+  </main>
+  <footer class="footer"><div class="shell footer-row"><span>Top 2% Scientist Trends · Complete career data</span><span>Subfield assignments follow each annual source workbook.</span></div></footer>
+</body>
+</html>

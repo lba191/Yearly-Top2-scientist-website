@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Methodology · Top 2% Scientist Trends</title>
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/styles.css?v=12">
+</head>
+<body data-page="methodology">
+  <header class="site-header"><div class="shell header-row"><a class="brand" href="index.html"><span class="mark">2%</span><span>Scientist Trends</span></a><div class="author-credit" aria-label="Site author"><strong>Bian Liu</strong><span class="author-role">PhD student · Department of Building Environment and Energy Engineering</span><span class="author-university">The Hong Kong Polytechnic University (PolyU)</span><a class="author-email" href="mailto:bi-an.liu@connect.polyu.hk">bi-an.liu@connect.polyu.hk</a></div><nav class="nav"><a href="index.html">Overview</a><a href="scientists.html">Scientists</a><a href="institutions.html">Institutions</a><a href="countries.html">Countries</a><a href="subfields.html">Subfields</a><a href="downloads.html">Downloads</a><a class="active" href="methodology.html">Methodology</a></nav><span class="pilot-badge">Complete data</span><span class="mobile-note">2019–2026</span></div></header>
+  <main class="shell">
+    <div class="page-head"><div class="eyebrow">Methodology and data guide</div><h1>Read the indicators with context.</h1><p>This guide explains the complete career data and the limits of citation-based comparison.</p></div>
+    <div class="method-grid">
+      <aside class="toc card"><strong>On this page</strong><a href="#coverage">Coverage</a><a href="#indicators">Indicators</a><a href="#interpretation">Interpretation</a><a href="#implementation">Implementation</a></aside>
+      <article class="prose">
+        <div class="callout">Citation indicators describe patterns in publication and citation data. They are not a complete measure of scientific quality, contribution, or social value.</div>
+        <h2 id="coverage">Coverage and editions</h2>
+        <p>The website contains 1,541,862 usable annual records from career datasets released between 2019 and 2026. For 2021, the November revision is treated as the canonical edition. Release year and metric year are displayed separately.</p>
+        <p>The source methodology includes scientists who are among the top 100,000 by composite citation score or within the top 2% of their main subfield. Career-long and single-year datasets describe different periods; this website currently uses the career-long files.</p>
+        <h2 id="indicators">Core indicators</h2>
+        <ul><li><strong>Global rank</strong> orders records across the complete release.</li><li><strong>Subfield rank</strong> compares scientists within the assigned subfield.</li><li><strong>h-index</strong> combines publication volume and citation reach.</li><li><strong>hm-index</strong> adjusts the h-index for co-authorship.</li><li><strong>c-score</strong> is a composite citation indicator built from several measures.</li><li><strong>Self-citation variants</strong> compare ranks and scores with self-citations included or excluded.</li></ul>
+        <h2 id="interpretation">Responsible comparison</h2>
+        <p>Raw ranks become harder to compare as the database grows. Release totals and shares provide context. Institution names are combined when differences are limited to capitalization, accents, punctuation, spacing, or a leading “The”. Abbreviations, renamed institutions, faculties, and other materially different affiliations remain separate until a reviewed authority file is available.</p>
+        <p>Institution and country counts describe representation among listed scientists. Without a suitable staff-size denominator, they should not be interpreted as performance rankings.</p>
+        <p>Some source records use the generic affiliation “College of Engineering” without naming a parent university. When a confidently linked scientist profile has a previous named affiliation, the website derives a separate engineering-college label, such as “Cornell University College of Engineering” or “UW College of Engineering”, and marks the annual affiliation as recovered. It does not add those records to the parent university. Unresolved generic records remain in the scientist data but are excluded from institution counts and rankings.</p>
+        <h2 id="implementation">Static data architecture</h2>
+        <p>The site is made of standard HTML pages. The complete data is split into gzip-compressed ranking pages, name-search indexes, institution and country histories, and hashed scientist-profile shards. Browsers fetch only the files required for the current view, which keeps the project suitable for GitHub and static hosting.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="footer"><div class="shell footer-row"><span>Top 2% Scientist Trends · Complete career data</span><span>Generated from all eight annual career workbooks.</span></div></footer>
+</body>
+</html>
